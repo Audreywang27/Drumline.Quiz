@@ -1,0 +1,50 @@
+.question{
+    display:none; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.choices{
+    display: flex; 
+    text-align: left; 
+    flex-direction: column; 
+    align-items: flex-start; 
+
+    width: 30vw; 
+    margin: 0 auto; 
+}
+
+.choices label{
+    display: flex; 
+    align-items: center; 
+    cursor: pointer; 
+    margin-bottom: 1rem; 
+    font-size: 1.1rem; 
+}
+
+.question p{
+    font-size: 2rem; 
+    margin-top: 5rem;
+    margin-bottom: 3rem; 
+    width: 43vw; 
+}
+
+.question label{
+    text-align: left; 
+}
+
+.choices input[type = "radio"]{
+    margin-right: 0.5rem; 
+    margin-top: 1rem; 
+}
+
+.nextButton:hover{
+    background-color: rgb(57, 205, 255); 
+    transform: scale(1.1); 
+}
+
+.nextButton{
+    align-self: center; 
+}
+

@@ -1,0 +1,65 @@
+body{
+    background:rgb(227, 212, 110); /*I lowkey want some sort of cute gradient*/
+    margin: 0;  
+    width: 100%;
+    height: 900px; 
+}
+
+body{
+    font-family: "Comic Sans MS", sans-serif; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+
+button{
+    margin-top: 3rem; 
+    cursor: pointer; 
+    width: 5rem; 
+    height: 2rem; 
+    font-size: 1.5rem; 
+    border-radius: 25%; 
+    background-color: rgb(182, 151, 48);
+}
+
+button:hover{
+    background-color: rgb(118, 215, 248); 
+    transform: scale(1.1); 
+} 
+
+/*
+h1{
+    font-size: 3vw; 
+    padding: 2vw; 
+    color: rgb(0, 0, 0); Lowkey want black outline, white on inside black on outside
+    position: absolute; 
+    width: 60vw; 
+    left: 55%;
+    top: 6%; 
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}*/
+/*
+.textbox{
+    position: absolute; 
+    text-indent: 2vw; 
+    margin-top: 30vh; 
+    padding: 2vw; 
+    border-radius:1vw; 
+    
+    font-size: 1.5vw;
+    opacity: 0.9; 
+    background-color: #a5ffcb; 
+    color: #000000; 
+
+    z-index: 8; 
+}
+
+.t1Formatting{
+  width: 50vw;  
+  top: 50%;
+  transform: translate(-50%,-50%);
+}*/
+
