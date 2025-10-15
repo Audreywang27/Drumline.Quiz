@@ -7,12 +7,11 @@ function startQuiz(){
 }
 
 function showQuestion(index){
-  document.querySelectorAll(".question").forEach(q => 
-    q.style.display = "none"); //Ts isn't hiding what it's suppposed to hide.....
+  document.querySelectorAll(".question").forEach(q => q.style.display = "none"); 
   document.getElementById("q" + (index+1)).style.display = "block"; 
   
 }
-      
+
 function prevQuestion(currentId, prevId){ //Previous question thing...like goes back and stuff
   document.getElementById(currentId).style.display = "none";
   document.getElementById(prevId).style.display = "block"; 
@@ -21,7 +20,7 @@ function prevQuestion(currentId, prevId){ //Previous question thing...like goes 
   }
   currentQuestion -= 1; 
 
-  showQuestion(currentQuestion);
+  //showQuestion(currentQuestion);
 }      
 
 function nextQuestion(currentId, nextId){
@@ -34,10 +33,7 @@ function nextQuestion(currentId, nextId){
   }
   answers.push(parseInt(selected.value));
 
-  showQuestion(currentQuestion);
-  //console.log(answers);
-  
-  //document.getElementById(currentId).style.display = "none";
+  document.getElementById(currentId).style.display = "none";
 
   if(nextId == "results"){
     results(); 
@@ -49,6 +45,7 @@ function nextQuestion(currentId, nextId){
 }
 
 function results(){
+  lethi = 1; 
   let snare = 0; 
   let bass = 0;
   let cymbals = 0;

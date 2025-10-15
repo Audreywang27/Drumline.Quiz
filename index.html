@@ -63,7 +63,7 @@
                     </label>
                 </div>
 
-                <button onclick = "prevQuestion('q2,q1')">Back</button>
+                <button onclick = "prevQuestion('q2','q1')">Back</button>
                 <button onclick = "nextQuestion('q2','q3')">Next</button>
             </div>
 
@@ -84,7 +84,7 @@
                     </label> 
                 </div>
                 
-                
+                <button onclick = "prevQuestion('q3','q2')">Back</button>
                 <button onclick = "nextQuestion('q3','q4')">Next</button>
             </div>
 
@@ -106,7 +106,7 @@
                     </label>
                 </div>
                 
-                
+                <button onclick = "prevQuestion('q4','q3')">Back</button>
                 <button onclick = "nextQuestion('q4','q5')">Next</button>
             </div>
 
@@ -127,9 +127,8 @@
                         <input type = "radio" name = "q5" value = "2">Trombone...you can hit people easier
                     </label>
                 </div>
-                
-                
-                <button onclick = "nextQuestion('q5','q6')">See Results</button>
+                <button onclick = "prevQuestion('q5','q4')">Back</button>
+                <button onclick = "nextQuestion('q5','q6')">Next</button>
             </div>
 
             <div class = "question" id = "q6"> <!--Basically makes a question class, this has a unique identifier as being the first question-->
@@ -150,8 +149,8 @@
                     </label>
                 </div>
                 
-                
-                <button onclick = "nextQuestion('q6','q7')">See Results</button>
+                <button onclick = "prevQuestion('q6','q5')">Back</button>
+                <button onclick = "nextQuestion('q6','q7')">Next</button>
             </div>
 
 
@@ -161,6 +160,7 @@
                 <div class = "choices">
                     <label>
                         <input type = "radio" name = "q7" value = "4" >Star.
+                    </label>
                     <label>
                         <input type = "radio" name = "q7" value = "3">Circle.
                     </label>
@@ -172,8 +172,8 @@
                     </label>
                 </div>
                 
-                
-                <button onclick = "nextQuestion('q7','q8')">See Results</button>
+                <button onclick = "prevQuestion('q7','q6')">Back</button>
+                <button onclick = "nextQuestion('q7','q8')">Next</button>
             </div>
 
              <div class = "question" id = "q8"> <!--Basically makes a question class, this has a unique identifier as being the first question-->
@@ -182,6 +182,7 @@
                 <div class = "choices">
                     <label>
                         <input type = "radio" name = "q8" value = "1" >Nice and early - 12 am. 
+                    </label>
                     <label>
                         <input type = "radio" name = "q8" value = "4">10 to 11 pm. 
                     </label>
@@ -193,15 +194,142 @@
                     </label>
                 </div>
                 
+                <button onclick = "prevQuestion('q8','q7')">Back</button>
+                <button onclick = "nextQuestion('q8','q9')">Next</button>
+            </div>
+
+            <div class = "question" id = "q9"> <!--Basically makes a question class, this has a unique identifier as being the first question-->
+                <p>Fav kind of soda?</p>
                 
-                <button onclick = "nextQuestion('q8','q9')">See Results</button>
+                <div class = "choices">
+                    <label>
+                        <input type = "radio" name = "q9" value = "2" >Bright red Fanta.
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q9" value = "1">Coke. 
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q9" value = "3">Sprite.
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q9" value = "4">Um. I don't like soda. 
+                    </label>
+                </div>
+                
+                <button onclick = "prevQuestion('q9','q8')">Back</button>
+                <button onclick = "nextQuestion('q9','q10')">Next</button>
+            </div>
+
+            <div class = "question" id = "q10">
+                <p>Fav animal?</p>
+
+                <div class = "choices">
+                    <label>
+                        <input type = "radio" name = "q10" value = "1" >Birds
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q10" value = "4">Puppy dawgs  
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q10" value = "2">Lizard lizard lizard
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q10" value = "3">Cats!
+                    </label>
+                </div>
+                <button onclick = "prevQuestion('q10','q9')">Back</button>
+                <button onclick = "nextQuestion('q10','q11')">Next</button>
+            </div>
+
+            <div class = "question" id = "q11">
+                <p>Favorite season?</p>
+
+                <div class = "choices">
+                    <label>
+                        <input type = "radio" name = "q11" value = "4" >Fall
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q11" value = "3">Winter  
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q11" value = "1">Spring
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q11" value = "2">SUMMER!
+                    </label>
+                </div>
+                <button onclick = "prevQuestion('q11','q10')">Back</button>
+                <button onclick = "nextQuestion('q11','q12')">Next</button>
+            </div>
+            
+            <div class = "question" id = "q12">
+                <p>What's your favorite Pokemon starter?</p>
+
+                <div class = "choices">
+                    <label>
+                        <input type = "radio" name = "q12" value = "4" >Bulbasaur!
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q12" value = "3">Pikachu! 
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q12" value = "1">Charmander!
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q12" value = "2">Squirtle!
+                    </label>
+                </div>
+                <button onclick = "prevQuestion('q12','q11')">Back</button>
+                <button onclick = "nextQuestion('q12','q13')">Next</button>
+            </div>
+
+            <div class = "question" id = "q13">
+                <p>What's your favorite donut?</p>
+
+                <div class = "choices">
+                    <label>
+                        <input type = "radio" name = "q13" value = "1" >Double chocolateee
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q13" value = "2">Glazed :'D
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q13" value = "3">Cinnamon and sugar dusted
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q13" value = "4">Strawberry frosted...with sprinkles of course!
+                    </label>
+                </div>
+                <button onclick = "prevQuestion('q13','q12')">Back</button>
+                <button onclick = "nextQuestion('q13','q14')">Next</button>
+            </div>
+
+            <div class = "question" id = "q14">
+                <p>What's your favorite subject in school?</p>
+
+                <div class = "choices">
+                    <label>
+                        <input type = "radio" name = "q14" value = "2" >Lunch-I mean, history. Obv
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q14" value = "4">Science.
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q14" value = "1">Math.
+                    </label>
+                    <label>
+                        <input type = "radio" name = "q14" value = "3">English. 
+                    </label>
+                </div>
+                <button onclick = "prevQuestion('q14','q13')">Back</button>
+                <button onclick = "nextQuestion('q14','q15')">Next</button>
             </div>
 
             <div id = "results" class = "results-box hidden"></div>
 
         </div>
        
-        <div id = "answer-popup" class = "popup-overlay hidden">
+        <div id = "answer-popup" class = "popup-overlay hidden"> <!--figure out how to get the popup to work-->
             <div class = "popup-box">
                 <p id = "popup-message">
                     Please choose an answer!
@@ -215,4 +343,3 @@
     <script src = "logic.js" defer></script>
 
 </html>
-
