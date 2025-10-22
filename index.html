@@ -1,4 +1,5 @@
-<!DOCTYPE html lang = "en">
+<!DOCTYPE html>
+<html lang = "en">
 <html>
     <head>
         <title>Drumline Quiz</title>
@@ -10,7 +11,7 @@
     <body>
         <div id = "start-screen">
             <h1>What Drumline Section Are You??</h1>
-            <p>In a drumline, there are typically 5 sections. They include: pit, snare, bass, tenor, and cymbals. In this quiz, I (a drumline member) will attempt to sort you into one of these 4 sections (snare, bass, cymbals, or tenor) based on this quiz!! </p> <!--Find a smaller version of (my apologoies (make it smaller than the rest))-->
+            <p id = "intro">In a drumline, there are typically 5 sections. They include: pit, snare, bass, tenor, and cymbals. In this quiz, I (a drumline member) will attempt to sort you into one of these 4 sections (snare, bass, cymbals, or tenor) based on this quiz!! </p> <!--Find a smaller version of (my apologoies (make it smaller than the rest))-->
             <p id = "preface">(PS, this is purely from my POV. If you don't agree with your results, I apologize, this is just my thoughts and opinions :P)</p> <!--Find a smaller version of (my apologoies (make it smaller than the rest))-->
                 <button class = "startQuiz" onclick = "startQuiz()">Start!</button>
         </div>
@@ -22,13 +23,15 @@
         4 = Bass
         -->
         
-        <div id = "quiz-container">
+        <div id = "quiz-container" style = "display:none">
             <div class = "question" id = "q1"> <!--Basically makes a question class, this has a unique identifier as being the first question-->
                 <p>Do you think you're chalant?</p>
                 
                 <div class = "choices">
                     <label>
-                        <input type = "radio" name = "q1" value = "1" >Yes! Absolutely. 
+                        <input type = "radio" name = "q1" value = "1" >
+                    <!--<span class = "custom"></span>-->
+                        Yes! Absolutely. 
                     </label>
                     <label>
                         <input type = "radio" name = "q1" value = "2">YESYESYESYESYES
@@ -80,7 +83,7 @@
                         <input type = "radio" name = "q3" value = "3">Pizza. 
                     </label>
                     <label>
-                        <input type = "radio" name = "q3" value = "4">I just don't eat. I eat before the games because I'm just different like that.
+                        <input type = "radio" name = "q3" value = "4">I just don't. I eat before >:D
                     </label> 
                 </div>
                 
@@ -165,7 +168,7 @@
                         <input type = "radio" name = "q7" value = "3">Circle.
                     </label>
                     <label>
-                        <input type = "radio" name = "q7" value = "2">Square. It's so stable and nice to look at. wowowowowowo I love squares squares are love squares are life yayayyayaya square
+                        <input type = "radio" name = "q7" value = "2">Square.
                     </label>
                     <label>
                         <input type = "radio" name = "q7" value = "1">Triangle.
@@ -309,7 +312,8 @@
 
                 <div class = "choices">
                     <label>
-                        <input type = "radio" name = "q14" value = "2" >Lunch-I mean, history. Obv
+                        <input type = "radio" name = "q14" value = "2" >
+                        Lunch-I mean, history. Obv
                     </label>
                     <label>
                         <input type = "radio" name = "q14" value = "4">Science.
@@ -322,24 +326,31 @@
                     </label>
                 </div>
                 <button onclick = "prevQuestion('q14','q13')">Back</button>
-                <button onclick = "nextQuestion('q14','q15')">Next</button>
+                <button onclick = "nextQuestion('q14','showResults')">Next</button>
             </div>
 
-            <div id = "results" class = "results-box hidden"></div>
-
         </div>
+
+        <div id = "loading" class = "hidden">
+            <img src="../images/drum-drums.gif" alt="Drumming GIF">
+        </div>
+
+        <div id = "showResults" class = "hidden"></div>
+
+        
+        
+         <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
        
-        <div id = "answer-popup" class = "popup-overlay hidden"> <!--figure out how to get the popup to work-->
-            <div class = "popup-box">
+        <div id = "popup" class = "popup hidden"> 
                 <p id = "popup-message">
                     Please choose an answer!
                 </p>
-                <buton id = "popup-ok">Okay</buton>
-            </div>
+                <button id = "okay-button" onclick = "hidePopup()">Okay</button>
 
         </div>
     </body>
 
     <script src = "logic.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 
 </html>
